@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+
+<form>
+    <ul>
+        <li><label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        </li>
+        <li>
+        <label for="email">E-post</label>
+        <input type="email" name="email" placeholder="exempel@exempel.com" required>
+        </li>
+    </ul>
+</form>
+
+<br>
+
+<nav>
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="about.html"></a></li>
+        <li><a href="booking.html"></a></li>
+    </ul>
+</nav>
+
+
+    <br>
+    <br>
+    <br>
+
+
+<!--Ordningen är avgörande-->
+<ol reversed>
+    <li>Öppna webbläsaren</li>
+    <li value="5">Skriv adressen</li>
+    <li>Tryck enter</li>
+</ol>
+
+<!--Ordningen spelar ingen roll-->
+<ul>
+    <li>HTML</li>
+    <li>JavScript</li>
+    <li>CSS</li>
+</ul>
+
+<!--Vid lista så ska det vara ol eller ul-->
+<nav>
+<ul>
+    <li><a href="index.html"></a></li>
+    <li><a href="about.html"></a></li>
+    <li><a href="booking.html"></a></li>
+</ul>
+</nav>
+
+<ul>
+    <li>Frontend</li>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <li>Backend</li>
+    <ul>
+        <li>JAVA</li>
+        <li>GOLANG</li>
+    </ul>
+</ul>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Markuplanguage för webbdevelopment</dd>
+</dl>
+
+<br>
+<br>
+
+
+
+
+<form action="submit.html">
+
+<!--Kopplar ihop label med input och for-->
+<label for="name">Name</label>
+<input type="text" id="name" name="firstname">
+<br>
+<label>Email</label>
+<input type="email">
+<br>
+<label>Password</label>
+<input type="password">
+<br>
+<label for="number">Amount</label>
+<input type="number" id="number" name="amount">
+
+<input type="radio" name="gender"> Man
+<input type="radio" name="gender" > Kvinna
+<input type="radio" name="gender" > Annat
+
+<br>
+<label for="newsletter">Nyhetsbrev</label>
+<input type="checkbox" name="newsletter" value="yes" id="newsletter">
+<br>
+<label>Välj kurs</label>
+<input type="checkbox" name="course" id="courses" value="html">
+<input type="checkbox" name="course" id="courses" value="css">
+
+<br>
+<br>
+<br>
+<label for="hidden">Gömd för användaren</label>
+<input type="hidden" name="userid" id="hidden">
+<br>
+<br>
+<input type="range" name="volume" min="0" max="100" step="5" id="">
+<br>
+<input type="month">
+<br>
+<input type="week">
+<br>
+<input type="date" name="birthday">
+<br>
+<input type="date" name="booking" min="2026-02-11" max="2027-02-11">
+<input type="color">
+<input type="file"  multiple name="Document">
+<input type="image">
+<br>
+
+<label for="name">Name</label>
+<br>
+<label for="phonenumber">Telefonnummer</label>
+<input type="text" id="phonenumber" placeholder="start with +46">
+
+<br>
+
+<p>Custom message</p>
+<textarea name="message" id="message">t.ex Önskemål om leverans: </textarea>
+</form>
+ <br>
+ <br>
+ <br>
+<form action="booking.html">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required pattern="[0-9]+">
+    <br>
+    <label for="name">Email</label>
+    <input type="text" name="email" id="email" required autocomplete="email">
+    
+    <input autofocus>
+
+    <button>Skicka</button>
+</form>
+
+
+<br>
+<br>
+
+<form method="get">
+<input type="text">
+</form>
+
+<form>
+    <select>
+        <option value="html">HTML</option>
+        <option value="css">CSS<option>
+        <ption value="javascript">JavScript<option>
+    </select>
+    <br>
+    <button>Skicka</button>
+</form>
+
+</body>
+</html>
