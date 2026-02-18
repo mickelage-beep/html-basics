@@ -1,0 +1,189 @@
+/*Reset old school*/
+
+ * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    color: red;
+}
+
+li:nth-child(2){
+    background-color: lightcoral;
+}
+
+li:nth-child(even){
+    background-color: rgb(128, 240, 152);
+}
+
+
+.title{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.intro{
+    background: green;
+    padding: 12px;
+    border-left: 6px solid #333;
+    color: blue;
+    font-weight: 400; 
+    background-color: aquamarine;
+    line-height: 1.2;
+}
+
+.box{
+   
+    background: blueviolet;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+#btn{
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+ h1 {
+    color: red;
+ }
+
+ #testp {
+    background-color: aqua;
+    color: yellow;
+    font-weight: 100;
+ }
+
+ .btn {
+    background-color: brown;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: #333;
+ }
+ .btn:hover{
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,2);
+ }
+
+ .box1{
+    background: coral;
+    height: 100px;
+    display: inline-block;
+   
+ }
+
+ .box2{
+    background: forestgreen; 
+    width: 100px;
+    display: block;
+    margin: 2px;
+ }
+
+ .box3{
+    background: coral;
+    height: 20px;
+    width: 30px;
+    display: inline-block;
+    margin: 2px; 
+ }
+
+ .container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+ }
+
+ .container2{
+    background-color: rgb(128, 39, 83);
+    display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 20px;
+ }
+
+ span{
+    background: coral;
+    /* Bryr sig inte om width eller 
+    hight för vi har display inline*/
+    width: 100px;
+    height: 100px;
+    display: inline;
+ }
+
+ .link{
+    color: green;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+ }
+
+ .link:hover{
+    color: red;
+ }
+
+ .link:link{
+    background-color: antiquewhite;
+ }
+
+ .link:visited{
+    background-color: rebeccapurple;
+ }
+
+ .link:active{
+    transform: translate(2px);
+ }
+
+ 
+
+ 
+
+/*Block element
+div
+ p
+ h1
+Inline element
+ span
+ a
+ img
+*/
+ 
+
+ /*
+ HIRARKI NIVÅER
+ Elemen selektor LÄGST PRIO
+
+ p{
+ }
+ h1{
+ }
+
+ .klass {
+ }
+
+ #id {
+ }
+
+ inline css 1000
+ id         100
+ klass      10
+ element    1
+
+ 
+ */
