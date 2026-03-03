@@ -79,6 +79,24 @@ li:nth-child(even){
     color: white;
     box-shadow: 0 8px 20px rgba(0,0,0,2);
  }
+ @media (hover: hover) {
+   .btn {
+      background-color: lightgreen;
+   }
+ }
+
+ @media(prefers-color-scheme: dark) {
+   p {
+      color: aliceblue;
+   }
+ }
+
+ @media (min-width: 760px) and (orientation: landscape) {
+  body {
+    background-color: black;
+  }
+}
+ 
 
  .box1{
     background: coral;
@@ -103,11 +121,18 @@ li:nth-child(even){
  }
 
  .container{
+   visibility: hidden;
     background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+ }
+
+ @media (max-width: 760) {
+   .container{
+      visibility: visible;
+   }
  }
 
  .container2{
@@ -149,6 +174,8 @@ li:nth-child(even){
  .link:active{
     transform: translate(2px);
  }
+
+
 
  
 
