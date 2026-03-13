@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <div class="logo">Grand Hotel</div>
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="room.html">Rum</a>
+            <a href="resturang.html">Resturang</a>
+            <a href="">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="booking">
+
+        <div id="bookingFormBox" class="bookingBox">
+            <h1>Boka ditt rum</h1>
+
+            <form id="bookingForm">
+
+                <label>Namn</label>
+                <input type="text" id="name" required >
+
+                <label>Välj rum</label>
+                <select id="room" required>
+                    <option>Välj rum</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Suite">Suite</option>
+                </select>
+
+                <label>Incheckningsdatum</label>
+                <input type="date" id="date" required>
+
+                <button type="submit" class="btnBook">Boka nu</button>
+
+            </form>
+        </div>
+
+        <div id="confirmationBox" class="bookingBox" style="display:none;">
+            <h2>Bokningen är bekräftad!</h2>
+            <p>Vi ser fram emot att välkommna dig.</p>
+            <a href="index.html" class="btnFront">Tillbaka till startsidan</a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+    <p>© 2026 Grand Hotel | Storgatan 1, 123 45 Stad | 012-345 67 89</p>
+    </footer>
+    
+
+<script src="script.js"></script>
+</body>
+</html>

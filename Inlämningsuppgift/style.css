@@ -1,0 +1,239 @@
+/*INDEX*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #c5a880;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgb(252, 235, 235);
+    position: fixed;
+    box-shadow: 0 2px 10px black;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 36px;
+    color: black;
+    font-size: 18px
+}
+
+.btnNav {
+    background-color: #1d3b2a;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 100vh;
+    text-align: center;
+    background: url("https://images.unsplash.com/photo-1566073771259-6a8506099945") center/cover no-repeat;
+
+}
+
+
+.front h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(252, 235, 235);
+}
+
+.front p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: rgb(252, 235, 235);
+}
+
+.btnFront {
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #c5a880;
+    color: white;
+}
+
+.about {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/*BOOKING*/
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d3b2a;
+}
+
+.bookingBox {
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: #f5f1e8;
+    box-shadow: 0 15px 40px black;
+    animation: fadeIn 1s ease;
+}
+
+
+.bookingBox h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.bookingBox label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bookingBox input,
+.bookingBox select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #c5a880;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.btnBook {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+    background-color: #1d3b2a;
+    color: white;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.btnBook:hover {
+    background-color: #c5a880;
+    color: #1d3b2a;
+    transition: all 0,5s ease;
+}
+
+
+#confirmationBox {
+    background-color:  #f5f1e8;
+    text-align: center;
+}
+
+/*ROOM*/
+.roomsSection {
+    padding:  40px;
+    max-width: 1100px;
+    margin-top: 80px;
+    margin: auto;
+}
+
+.roomsSection h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.roomCard {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.roomCard img {
+    width: 50%;
+    border-radius: 12px;
+}
+
+.roomInfo h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.roomInfo p {
+    line-height: 1.6;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    nav a {
+        margin: 9px;
+    }
+
+    .front h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bookingBox {
+        padding: 30px;
+    }
+}
+
+
+.footer {
+    background-color: #1d3b2a;
+    color: #f5f1e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
